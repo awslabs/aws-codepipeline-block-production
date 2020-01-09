@@ -721,7 +721,7 @@ Resources:
      Ref: DemoResourcesS3BucketName
     S3Key:
      Ref: DemoResourcesS3ObjectKey
-   Runtime: "nodejs4.3"
+   Runtime: "nodejs10.x"
    Timeout: 25
 
  RegisterCanaryApprovalFunctionExecutionRole:
@@ -823,7 +823,7 @@ Resources:
      Code:
        S3Bucket: !Ref DemoResourcesS3BucketName
        S3Key: !Ref DemoResourcesS3ObjectKey
-     Runtime: "nodejs4.3"
+     Runtime: "nodejs10.x"
      Timeout: "25"
      Environment:
        Variables:
@@ -857,7 +857,7 @@ Resources:
      Code:
        S3Bucket: !Ref DemoResourcesS3BucketName
        S3Key: !Ref DemoResourcesS3ObjectKey
-     Runtime: "nodejs4.3"
+     Runtime: "nodejs10.x"
      Timeout: "25"
      Environment:
        Variables:
